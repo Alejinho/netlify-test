@@ -21,9 +21,9 @@ module.exports = {
 // Create env variables
 function env(values) {
     const env = Object.keys(values).reduce((env, key) => {
-      env[`process.env.${key}`] = JSON.stringify(process.env[key] || values[key])
+      env[`process.env.${key}`] = JSON.stringify(process.env[key] || values[key]);
       return env
-    }, {})
+    }, {});
 
     return new webpack.DefinePlugin(env);
 }

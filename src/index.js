@@ -8,7 +8,7 @@ const manager = new AuthManager(
 );
 
 (async function () {
-  const password = 'QWErty123!'
+  const password = 'QWErty123!';
 
   try {
     let result = await manager.signUp('my-name-2', password);
