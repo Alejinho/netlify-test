@@ -11,14 +11,14 @@ const manager = new AuthManager(
   const password = 'QWErty123!';
 
   try {
-    let result = await manager.signUp('my-name-2', password);
+    let result = await manager.signUp('seeealejandro@gmail.com', password);
     console.log(result)
   } catch (e) {
     console.log(e)
   }
 
   try {
-    let result = await manager.signIn('my-name-2', password);
+    let result = await manager.signIn('seeealejandro@gmail.com', password);
     console.log(result)
   } catch (e) {
     console.log(e)
